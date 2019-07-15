@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sistema laravel</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>Seja bem vindo {{ $id }} e sua idade é: {{ $idade }}  a pagina home</h1>
-
+    <h1>O Aluno: {{$nome}} {{$sobrenome }} foi cadastrado com sucesso!</h1>
 </body>
 </html>
