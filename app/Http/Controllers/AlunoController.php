@@ -11,10 +11,11 @@ class AlunoController extends Controller{
             return view("cadastroAluno");
         }
         
-        return view('sucesso',[
-            "nome"=> $request->nome,
-            "sobrenome"=> $request->sobrenome
-        ]);
+        $pessoas = [
+            ["nome"=>"vinicius","sobrenome"=>"oliveira"],
+            ["nome"=>"Natalia","sobrenome"=>"lira"]
+        ];
+        return view('sucesso', ['pessoas'=>$pessoas]);
 
     }
 }

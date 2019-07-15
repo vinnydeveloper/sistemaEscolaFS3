@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <title>Document</title>
 </head>
 <body>
-    <ul>
-    
-    
-    @foreach($pessoas as $pessoa)
-        @if($pessoa['nome'] == "vinicius")
-          <li>{{ $pessoa["nome"] }}</li>
-        @endif
-    @endforeach
-    </ul>
-    
+    <header>
+        <p>Cabeçalho do site</p>
+    </header>
+        <main>
+            @yield('conteudo')
+        </main>
+    <footer>
+        <p>Rodapé do site</p>
+    </footer>
 </body>
 </html>
