@@ -7,15 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <ul>
     
-    
-    @foreach($pessoas as $pessoa)
-        @if($pessoa['nome'] == "vinicius")
-          <li>{{ $pessoa["nome"] }}</li>
-        @endif
-    @endforeach
-    </ul>
+        @if(!$erro)
+            <h1>O aluno: {{$aluno->nome}} foi cadastrado com sucesso! </h1>
+        @else
+            <h1>Erro ao cadatrar o aluno: {{$aluno->nome}} no banco de dados!</h1>
+        @endif    
     
 </body>
 </html>
